@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- LOGIN -->
+    <item name="login_input_max_length" type="integer">8</item>
+
+	<!-- MARGINS --> 
+	<dimen name="marginZero">0dp</dimen>
+	<dimen name="marginVeryVerySmall">1dp</dimen>
+	<dimen name="marginVerySmall">5dp</dimen>
+	<dimen name="marginSmall">10dp</dimen>
+	<dimen name="marginSmallMedium">15dp</dimen>
+	<dimen name="marginMedium">20dp</dimen>
+	<dimen name="marginMediumBig">25dp</dimen>
+	<dimen name="marginBig">30dp</dimen>
+	<dimen name="marginVeryBig">50dp</dimen>
+	<dimen name="marginVeryVeryBig">60dp</dimen>
+		
+	<dimen name="marginFontVerySmall">5sp</dimen>
+	<dimen name="marginFontSmall">10sp</dimen>
+	<dimen name="marginFontMedium">20sp</dimen>
+	<dimen name="marginFontBig">30sp</dimen>
+	<dimen name="marginFontVeryBig">50sp</dimen>
+	
+	
+	<!-- USER KEY EDIT TEXT PADDINGS AND CORNERS -->
+	<dimen name="paddTopET">10sp</dimen>
+	<dimen name="paddRightET">10sp</dimen>
+	<dimen name="paddBottomET">10sp</dimen>
+	<dimen name="paddLeftET">10sp</dimen>
+	<dimen name="radBottomRightET">5sp</dimen>
+	<dimen name="radTopRightET">5sp</dimen>
+	<dimen name="radBottomLeftET">5sp</dimen>
+	<dimen name="radTopLeftET">5sp</dimen>
+	<dimen name="borderET">2sp</dimen>
+	<!-- --> 
+	
+	<!-- TEXTBOX AND SELECTOR HEIGHT --> 
+	<!-- It is a function of font size --> 
+	<dimen name="heightGenET">45sp</dimen> 
+	
+	<!-- BUTTON HEIGHT --> 
+	<!-- It is a function of font size --> 
+	<dimen name="heightGenBtn">45sp</dimen> 
+	
+
+	
+	<!-- LOGIN ACTIVITY --> 
+	<!-- SWITCH CUSTOM -->
+	<item name="switchTextHeight" type="dimen">@dimen/font_size_26</item>
+	<dimen name="switchWidth">100dp</dimen>
+	<dimen name="switchHeight">40dp</dimen>
+	
+	<!-- DIALOG CLOSE --> 
+	<dimen name="btnsHeight">48dp</dimen>
+	
+	<!-- HOME ACTIVITY --> 
+	<!-- Menu button side --> 
+	<dimen name="hom_bmenu_side">48dp</dimen>
+	
+	<!-- FONT SIZES -->
+	<dimen name="font_size_18">11sp</dimen> 
+	<dimen name="font_size_20">12sp</dimen> 
+	<dimen name="font_size_22">13sp</dimen> 
+	<dimen name="font_size_24">14sp</dimen> 
+	<dimen name="font_size_26">15sp</dimen> 
+	<dimen name="font_size_28">16sp</dimen> 
+	<dimen name="font_size_30">17sp</dimen> 
+	<dimen name="font_size_32">18sp</dimen> 
+	<dimen name="font_size_34">19sp</dimen> 
+	<dimen name="font_size_36">20sp</dimen>
+	<dimen name="font_size_42">23sp</dimen>  
+	<dimen name="font_size_44">24sp</dimen> 
+	<dimen name="font_size_50">27sp</dimen> 
+	<dimen name="font_size_52">28sp</dimen>
+	<dimen name="font_size_60">31sp</dimen>
+		
+	<!-- LEFT MENU -->
+	<dimen name="men_head_height">45dp</dimen> 
+	<dimen name="men_item_height">48dp</dimen> 
+	<dimen name="men_item_padding_left">15sp</dimen>
+	<dimen name="men_item_padding_right">15sp</dimen>
+	<dimen name="men_head_margin_left">15sp</dimen>
+	<dimen name="men_head_margin_right">15sp</dimen>
+	<dimen name="men_section_height">55dp</dimen> 
+	<dimen name="men_category_height">55dp</dimen> 
+	<dimen name="men_separatorHeight">0.5dp</dimen> 
+	<dimen name="men_category_icon_width">30dp</dimen>
+	<dimen name="men_category_icon_height">30dp</dimen>
+		
+	<!-- MAP -->
+	<dimen name="map_icon_location_widht">55dp</dimen>
+	<dimen name="map_icon_location_height">55dp</dimen>
+	
+	<!-- DIALOGS SHARE -->
+	<dimen name="dlg_detail_share_width">312dp</dimen>
+	<dimen name="dlg_detail_share_height">355dp</dimen>
+	<dimen name="dlg_detail_share_img_width">75dp</dimen>
+	<dimen name="dlg_detail_share_img_height">65dp</dimen>
+	
+	<!-- DIALOG SHARE TWITTER -->
+	<dimen name="dlg_detail_share_twitter_btns_margin_left">6.5dp</dimen>
+	<dimen name="dlg_detail_share_twitter_btns_margin_right">6.5dp</dimen>
+	
+	<!-- SPLASH --> 
+	<dimen name="splashLogoTopMargin">130dp</dimen> 
+	
+</resources>

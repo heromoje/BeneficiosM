@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- App -->
+    <string name="app_name">Beneficios BCP</string>
+    <string name="menu_settings">Ajustes</string>
+
+    <string name="facebook_app_id">547900765406186</string>
+    <string name="facebook_app_id_debug">fb620223481391648</string>
+
+    <!-- General -->
+    <string name="CLOSE">Cerrar</string>
+    <string name="ERROR">Error</string>
+    <string name="SIN_CONTACTOS">Sin contactos.</string>
+    <string name="WARNING">Advertencia</string>
+    <string name="INFORMATION">Información</string>
+    <string name="DELETE">Borrar</string>
+    <string name="RETRY">Reintentar</string>
+    <string name="EXIT">Salir</string>
+    <string name="EXTENSION">Extensión</string>
+    <string name="ACCEPT">Aceptar</string>
+    <string name="CANCEL">Cancelar</string>
+    <string name="OK">OK</string>
+    <string name="ON">ON</string>
+    <string name="OFF">OFF</string>
+    <string name="ENTER">Entrar</string>
+    <string name="EMPTY_STRING"></string>
+    <string name="SOL_CURRENCY_SYMBOL">S/.</string>
+    <string name="METER_UNIT">m</string>
+    <string name="KILOMETER_UNIT">km</string>
+    <string name="DOLLAR_CURRENCY_SYMBOL">$</string>
+    <string name="PERCENT_SYMBOL">%</string>
+    <string name="AT_SYMBOL">\@</string>
+    <string name="CONCEPT_OPTIONAL">Concepto (opcional)</string>
+    <string name="EMAIL_RECEIVER_OPTIONAL">E-mail destinatario (opcional)</string>
+    <string name="SAVE_OPERATION_OPTIONAL">Guardar operación (opcional)</string>
+    <string name="LOADING">Cargando...</string>
+    <string name="NO_SHOW_MORE">No volver a mostrar este mensaje</string>
+    <string name="NO_RESULTS">No se han podido descargar los descuentos para esta categoría.</string>
+    <string name="NETWORK_UNAVAILABLE">Se ha producido un error de conexión. Por favor, vuelve a intentarlo.</string>
+
+    <!-- Buttons -->
+    <string name="BTN_OK">OK</string>
+    <string name="BTN_ACCEPT">Aceptar</string>
+    <string name="BTN_ACCEPT_CONDITION">Aceptar y continuar</string>
+    <string name="BTN_CANCEL">Cancelar</string>
+    <string name="BTN_PREVIOUS">Anterior</string>
+    <string name="BTN_NEXT">Siguiente</string>
+    <string name="BTN_START">Comenzar</string>
+    <string name="BTN_ENTER">Entrar</string>
+    <string name="BTN_SEND">Enviar</string>
+    <string name="BTN_SAVE">Guardar</string>
+
+    <!-- Date Manger -->
+    <string name="DATE_WEEKDAY_MONDAY_INITIAL">L</string>
+    <string name="DATE_WEEKDAY_TUESDAY_INITIAL">M</string>
+    <string name="DATE_WEEKDAY_WEDNESDAY_INITIAL">X</string>
+    <string name="DATE_WEEKDAY_THURSDAY_INITIAL">J</string>
+    <string name="DATE_WEEKDAY_FRIDAY_INITIAL">V</string>
+    <string name="DATE_WEEKDAY_SATURDAY_INITIAL">S</string>
+    <string name="DATE_WEEKDAY_SUNDAY_INITIAL">D</string>
+    <string name="DATE_MONTH_JANUARY">Enero</string>
+    <string name="DATE_MONTH_FEBRUARY">Febrero</string>
+    <string name="DATE_MONTH_MARCH">Marzo</string>
+    <string name="DATE_MONTH_APRIL">Abril</string>
+    <string name="DATE_MONTH_MAY">Mayo</string>
+    <string name="DATE_MONTH_JUNE">Junio</string>
+    <string name="DATE_MONTH_JULY">Julio</string>
+    <string name="DATE_MONTH_AUGUST">Agosto</string>
+    <string name="DATE_MONTH_SEPTEMBER">Septiembre</string>
+    <string name="DATE_MONTH_OCTOBER">Octubre</string>
+    <string name="DATE_MONTH_NOVEMBER">Noviembre</string>
+    <string name="DATE_MONTH_DECEMBER">Diciembre</string>
+
+    <!-- LgnHome -->
+    <string name="LGN_KEYOFSIX">Clave de 6</string>
+    <string name="LGN_IFORGOT_PASSWORD">He olvidado mi contraseña</string>
+    <string name="LGN_MAPS">Mapas</string>
+    <string name="LGN_CONTACT_US">Contáctanos</string>
+    <string name="LGN_DISCOUNTS">Descuentos</string>
+    <string name="LGN_YOUR">Tus</string>
+    <string name="LGN_BENEFITS">Beneficios</string>
+    <string name="LGN_COMPLEMENT_MESSAGE">(*) Solo llenar si tu C.I. es duplicado</string>
+    <string name="LGN_CIC">Introduce tu C.I.</string>
+    <string name="LGN_COMPLEMENT">Introduce Complemento *</string>
+    <string name="LGN_EXTENSION">Extensión del documento</string>
+    <string name="LGN_INVALID_EXTENSION">Debe seleccionar una extensión.</string>
+    <string name="LGN_REMEMBER">Recordar C.I.</string>
+    <string name="LGN_EMPTY_ERROR">C.I. incorrecto</string>
+    <string name="LGN_ERRONEOUS">C.I. incorrecto</string>
+    <string name="LGN_FAILS_ERROR">El login con el servidor ha fallado</string>
+
+    <!-- ConditionLayout -->
+    <string name="CON_CONDITION">Condiciones de Uso</string>
+    <string name="CON_ERROR_EMPTY_PHONE">Celular vacío</string>
+    <string name="CON_ERROR_EMPTY_EMAIL">Email vacío</string>
+    <string name="CON_TXT_DESCRIPTION">Favor lea las condiciones de uso:</string>
+    <string name="CON_TXT_DATES">Ingrese los siguientes datos:</string>
+    <string name="CON_TXT_PHONE">Número de celular</string>
+    <string name="CON_TXT_EMAIL">Email</string>
+    <string name="CON_ERROR_PHONE">Número de celular incorrecto.</string>
+    <string name="CON_ERROR_EMAIL">Email incorrecto</string>
+    <string name="CON_SERVER_ERROR">El registro con el servidor ha fallado</string>
+    <string name="CON_URL">http://www2.bcp.com.bo/Beneficios.Extranet/TerminosCondiciones.html</string>
+
+    <!-- RatingLayout -->
+    <string name="RAT_TITLE">Calificación</string>
+
+    <!-- Home -->
+    <string name="HOM_DISCOUNTS">Descuentos</string>
+    <string name="HOM_PROMOTIONS">Promociones</string>
+    <string name="HOM_FACEBOOK">Facebook</string>
+    <string name="HOM_TWITTER">Twitter</string>
+    <string name="HOM_SECTIONS">Secciones</string>
+    <string name="HOM_SOCIAL_NETWORKS">Redes sociales</string>
+    <string name="HOM_SECTION_EXPIRATION">Válido hasta el</string>
+    <string name="HOM_CLOSE_DIALOG_MESSAGE">¿Estás seguro de cerrar sesión?</string>
+    <string name="HOM_MY_DISCOUNTS">Mis descuentos</string>
+
+    <!-- HomeMenuLeft -->
+    <string name="HOM_CLOSE_SESSION">Cerrar Sesión</string>
+    <string name="HOM_CONFIGURATION">Configuración</string>
+    <string name="HOM_VIEW_OFFERS_FROM">Ver ofertas de</string>
+
+    <!-- HomeMenuRight -->
+    <string name="HOM_FAVOURITES">Favoritos</string>
+
+    <!-- Discounts -->
+    <string name="DSC_DETAIL_PAGINATION">de</string>
+    <string name="DSC_MAP_SEARCH_BOX">Introduce la dirección</string>
+    <string name="DSC_DETAIL_LOCATIONS_DIALOG_TITLE">Direcciones</string>
+    <string name="DSC_DETAIL_DISCOUNT_USED">Esta oferta ya\nha sido usada</string>
+    <string name="DSC_DETAIL_DISCOUNT_EXPIRED">Esta oferta ya\nha expirado</string>
+    <string name="DSC_PULL_TO_REFRESH">Tire para actualizar</string>
+    <string name="DSC_REFRESHING_DATA">Actualizando datos...</string>
+    <string name="DSC_RESTRICTIONS">Restricciones</string>
+    <string name="DSC_SHOW_OFFERS_FROM">Ver ofertas de:</string>
+    <string name="DSC_DETAIL_DISCOUNT">Detalle descuento</string>
+    <string name="DSC_MAP_HOW_TO_GO">¿Cómo llegar?</string>
+    <string name="SPECIAL_DISCOUNTS_ALERT_MESSAGE">Puedes elegir uno de estos restaurantes, y si además tienes tus CTS en el BCP puedes elegir un restaurante adicional.</string>
+    <string name="DSC_MAP_LOCATION_ADDRESS_NOT_FOUND">No se ha encontrado ninguna coincidencia</string>
+    <string name="DSC_MAP_LOCATION_NOT_AVAILABLE_YET">Localización aún no disponible, vuelva a intentarlo en unos instantes</string>
+    <string name="DSC_DETAIL_LOCATIONS_DIALOG_TITLE_IPAD">Direcciones disponibles</string>
+    <string name="SPECIAL_DISCOUNTS_TITLE">Descuentos Especiales</string>
+    <string name="DSC_TOP_PROMOTIONS">Por Expirar</string>
+    <string name="DSC_VIEW_OFFERS_FROM_">Ver ofertas de:</string>
+    <string name="DSC_NO_DISCOUNT_FOR_CATEGORY">No se han podido descargar los descuentos para esta categoría.</string>
+    <string name="DSC_MAP_LOCATION_ACTIVATION">El GPS esta desactivado ¿desea activarlo? </string>
+    <string name="DSC_GO_TO_SETTINGS">Ir a ajustes</string>
+    <string name="DSC_GO_BACK">Regresar</string>
+    <string name="DSC_CALL">Datos de contacto</string>
+    <string name="DSC_CALL_PHONE_BANK">Llamar a Banca por Teléfono</string>
+    <string name="DSC_UPDATE_FROM_STORE">Actualizar</string>
+    <string name="DSC_CONTINUE_WITHOUT_UPDATE">Continuar sin actualizar</string>
+
+    <!-- Promotions -->
+
+    <!-- Facebook -->
+    <string name="FB_NOT_INSTALLED_ALERT_TITLE">Facebook</string>
+    <string name="FB_NOT_INSTALLED_ALERT_MESSAGE">No tiene Facebook instalado</string>
+    <string name="FB_CANCEL_BUTTON">Cancelar</string>
+    <string name="FB_PUBLIC_BUTTON">Publicar</string>
+    <string name="FB_DEFAULT_TEXT">
+¡Gracias a mi Tus Beneficios BCP tengo este súper descuento!
+
+Los beneficios varían por cada cliente. Restricciones en http://goo.gl/q9TI8</string>
+    <string name="FB_SENDING_POST">Publicando en facebook</string>
+    <string name="FB_SENDING_POST_ERROR">Error al publicar en facebook</string>
+    <string name="FB_LOGIN_ERROR">Error al iniciar sesión en Facebook</string>
+
+    <!-- Twitter -->
+    <string name="TWITTER_NOT_INSTALLED_ALERT_TITLE">Twitter</string>
+    <string name="TWITTER_NOT_INSTALLED_ALERT_MESSAGE">No tiene Twitter instalado</string>
+    <string name="TWITTER_DEFAULT_TEXT">
+¡Un súper descuento gracias a mi Tus Beneficios BCP! Restricciones en http://goo.gl/q9TI8</string>
+    <string name="TWITTER_CANCEL">Cancelar</string>
+    <string name="TWITTER_SEND">Tweet</string>
+    <string name="TWITTER_WAIT">Por favor, espere ...</string>
+    <string name="TWITTER_SENDING_TWEET">Enviando tweet</string>
+    <string name="TWITTER_ERROR_POST">Error al enviar el tweet</string>
+    <string name="TWITTER_ERROR_LOGIN">Error al iniciar sesión en Twitter</string>
+
+    <!-- Errors -->
+    <string name="ERROR_LOCATIONS_DOWNLOAD">Ha ocurrido un error descargando datos de localización</string>
+    <string name="ERROR_LOADING_ROUTE">Ha ocurrido un error cargando la ruta</string>
+    <string name="ERROR_DOWNLOADING_IMAGES">Ha ocurrido un error descargado imágenes</string>
+    <string name="ERROR_FINDING_USER_LOCATION">No se ha podido encontrar la localización del usuario</string>
+    <string name="ERROR_USER_LOGOUT">El logout de usuario ha fallado</string>
+    <string name="ERROR_DOWNLOADING_DISCOUNTS">Ha ocurrido un error descargando datos de descuentos</string>
+    <string name="ERROR_NOT_IN_SESSION_YET">Carga de datos no completada, intentalo de nuevo en breves instantes</string>
+    <string name="ERROR_DOWNLOADING_MENU">Ha ocurrido un error descargando datos del menu</string>
+    <string name="ERROR_DOWNLOADING_ONE_DISCOUNT">Ha ocurrido un error descargando datos de un descuento</string>
+    <string name="ERROR_SESSION_LOGOUT">El logout de sesión ha fallado</string>
+    <string name="ERROR_WAITING_FOR_SERVER">Se ha sobrepasado el tiempo de espera por respuesta</string>
+    <string name="ERROR_SSL">Ha ocurrido un error con el certificado de seguridad</string>
+    <string name="ERROR_PARSER">Ha ocurrido un error procesando la respuesta del servidor</string>
+    <string name="ERROR_INTERNAL">Ha ocurrido un error interno</string>
+    <string name="ERROR_SECTION_EXPIRED">Estamos preparando nuevas ofertas para ti, nuestra próxima campaña de Tus Beneficios iniciará pronto.</string>
+    <string name="ERROR_SESSION_EXPIRED">La sesión ha expirado. Ingresa nuevamente al aplicativo.</string>
+    <string name="ERROR_GOOGLE_PLAY_SERVICES">Es necesario tener instalada la aplicación de servicios de Google para poder visualizar el mapa</string>
+
+    <!-- Loading -->
+    <string name="LOADING_CONTACTS">Cargando contactos ...</string>
+    <string name="LOADING_SESSION">Cargando sesión ...</string>
+    <string name="LOADING_SESSION_IMAGES">Cargando imágenes de sesión ...</string>
+    <string name="LOADING_VALIDATING_USER">Validando usuario ...</string>
+    <string name="LOADING_SECTIONS">Cargando secciones ...</string>
+    <string name="LOADING_DEFAULT_CATEGORY">Cargando categoría por defecto ...</string>
+    <string name="LOADING_CATEGORY">Cargando</string>
+    <string name="LOADING_SEARCHING_ADDRESS">Buscando dirección ...</string>
+    <string name="LOADING_PROMOTIONS">Cargando promociones ...</string>
+    <string name="LOADING_CITIES">Cargando ciudades ...</string>
+    <string name="LOADING_LOGOUT">Cerrando sesión ...</string>
+    <string name="LOADING_ROUTE">Calculando ruta ...</string>
+    <string name="SENDING_RATING">Enviando ...</string>
+
+    <!-- Maps -->
+    <string name="MAP_LOCATION_SERVICE_DISABLE_TITLE">Servicio de localización</string>
+    <string name="MAP_LOCATION_SERVICE_DISABLE_MESSAGE">El servicio de localización no está activado. Vaya a ajustes y habilite el servicio de localización para BCP.</string>
+
+    <!-- Service Errors -->
+    <string name="ME_9000">Tu operación no pudo procesarse. Por favor, intenta en 5 minutos.</string>
+    <string name="ME_9001">Tu operación no pudo procesarse. Por favor, intenta en 5 minutos.</string>
+    <string name="ME_001">Tu operación no pudo procesarse. Por favor, intenta en 5 minutos.</string>
+    <string name="ME_100">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_101">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_102">Ocurrió un error, por favor llamar al 3119898.</string>
+    <string name="ME_103">Ocurrió un error, por favor llamar al 3119898.</string>
+    <string name="ME_104"></string>
+    <string name="ME_105"></string>
+    <string name="ME_106">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_107"></string>
+    <string name="ME_108"></string>
+    <string name="ME_109">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_110">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_111">Tu sesión ha terminado. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_200">Servicio en mantenimiento, por favor llamar al 3119898.</string>
+    <string name="ME_201">Servicio en mantenimiento, por favor llamar al 3119898.</string>
+    <string name="ME_202">Lo sentimos, no tenemos registro de su documento de identidad, por favor llamar al 3119898.</string>
+    <string name="ME_203">Ocurrió un error, por favor llamar al 3119898.</string>
+    <string name="ME_204"></string>
+    <string name="ME_205"></string>
+    <string name="ME_206">Servicio en mantenimiento, por favor llamar al 3119898.</string>
+    <string name="ME_300">Tu usuario no es válido. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_301">Tu usuario no es válido. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_302">Ocurrió un error. Si deseas realizar alguna operación, ingresa nuevamente al aplicativo.</string>
+    <string name="ME_303"></string>
+    <string name="ME_304"></string>
+    <string name="ME_305">Ocurrió un error, por favor llamar al 3119898.</string>
+    <string name="ME_400"></string>
+    <string name="ME_500"></string>
+    <string name="ME_501"></string>
+    <string name="ME_600"></string>
+    <string name="ME_601"></string>
+    <string name="ME_700"></string>
+    <string name="ME_800"></string>
+    <string name="ME_801"></string>
+    <string name="ME_802"></string>
+    <string name="ME_803"></string>
+    <string name="ME_804"></string>
+
+    <!-- Jailbreak -->
+    <string name="DEVICE_WITH_JAILBREAK">Por motivos de seguridad, las aplicaciones del BCP no pueden ser utilizadas en dispositivos que hayan obtenido privilegios de administrador.</string>
+
+    <!-- Update -->
+    <string name="DSC_OPTIONAL_UPDATE_MESSAGE">Tenemos una nueva versión de la aplicación Tus Beneficios, conoce las novedades que tenemos para ti. Descarga la nueva versión desde Apple Store o Google Play.</string>
+    <string name="DSC_MANDATORY_UPDATE_MESSAGE">Tenemos una nueva versión de la aplicación Tus Beneficios. Descárgala desde Apple Store o Google Play y conoce las novedades que tenemos para ti</string>
+    <string name="DSC_UPDATE_TITLE">ACTUALIZACIÓN DE VERSIÓN</string>
+
+
+</resources>

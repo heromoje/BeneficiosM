@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/llDialogGen"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginMedium"
+        android:paddingLeft="@dimen/marginMedium"
+        android:paddingStart="@dimen/marginMedium"
+        android:paddingRight="@dimen/marginMedium"
+        android:paddingEnd="@dimen/marginSmall"
+        android:paddingTop="@dimen/marginMedium" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:layout_marginEnd="@dimen/marginSmall"
+            android:contentDescription="@null"
+            android:src="@drawable/dlg_icon_warning" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/genDialogErrorWarningTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/CON_CONDITION"/>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@drawable/gen_background"
+         />
+    <LinearLayout
+        android:id="@+id/llCardBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/marginMedium"
+        android:paddingRight="@dimen/marginMedium" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMedium"
+            android:text="@string/CON_TXT_DESCRIPTION"
+            android:textSize="@dimen/font_size_28"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/textView_Link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:layout_marginTop="@dimen/marginSmall"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:text="@string/CON_URL"
+            android:textSize="@dimen/font_size_28"
+            android:textColor="#3b98ff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CON_TXT_DATES"
+            android:textSize="@dimen/font_size_28"
+            android:textColor="#000"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightGenET"
+            android:layout_marginTop="@dimen/marginSmall"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:background="@drawable/lgn_box_dni" >
+            <EditText
+                android:id="@+id/editText_Phone"
+                style="@style/loginTextCic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="@string/CON_TXT_PHONE"
+                android:imeActionId="@+id/editText_Email"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="@integer/login_input_max_length"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/marginMedium"
+                android:paddingStart="@dimen/marginMedium"
+                android:paddingRight="@dimen/marginMedium"
+                android:paddingEnd="@dimen/marginMedium"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightGenET"
+            android:background="@drawable/lgn_box_dni"
+            android:layout_marginBottom="@dimen/marginMedium">
+            <EditText
+                android:id="@+id/editText_Email"
+                style="@style/loginTextCic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="@string/CON_TXT_EMAIL"
+                android:imeActionId="@+id/button_Accept"
+                android:imeOptions="actionDone"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:layout_margin="0dp"
+                android:paddingLeft="@dimen/marginMedium"
+                android:paddingStart="@dimen/marginMedium"
+                android:paddingRight="@dimen/marginMedium"
+                android:paddingEnd="@dimen/marginMedium"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dlg_close_btn_separator" >
+
+        <LinearLayout
+            android:id="@+id/llButtons2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dlg_close_btn_separator"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/textView_Continue"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_ACCEPT" />
+
+            <TextView
+                android:id="@+id/textView_Cancel"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_CANCEL" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

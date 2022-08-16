@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:design:23.4.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://C:/Program Files/Java/jdk-16/caches/transforms-2/files-2.1/02cba92447d85f9cbafe8e497b03d9c6/design-23.4.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-16/caches/transforms-2/files-2.1/02cba92447d85f9cbafe8e497b03d9c6/design-23.4.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-16/caches/transforms-2/files-2.1/02cba92447d85f9cbafe8e497b03d9c6/design-23.4.0/res" />
+      <root url="file://C:/Program Files/Java/jdk-16/caches/transforms-2/files-2.1/02cba92447d85f9cbafe8e497b03d9c6/design-23.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Program Files/Java/jdk-16/caches/modules-2/files-2.1/com.android.support/design/23.4.0/b2009c6d5d1dce16a9ed881ad7c672d103dea955/design-23.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-16/caches/modules-2/files-2.1/com.android.support/design/23.4.0/2d5de271c94f7ebb4dcd7f8d14dc23ae4c0c1d61/design-23.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

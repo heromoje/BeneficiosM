@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="customSwitch">
+        
+        <!-- images to make the component -->
+        <attr name="bgImage" format="reference" />
+        <attr name="switcherImage" format="reference" />
+        
+        <!-- text values -->
+        <attr name="textOn" format="reference|string" />
+        <attr name="textOff" format="reference|string" />
+        
+        <!-- text height -->
+        <attr name="textHeight" format="reference" />
+        
+        <!--  text font -->
+        <attr name="textFontName" format="string" />
+        
+        <!-- color of text -->
+        <attr name="colorTextOn" format="reference" />
+        <attr name="colorTextOff" format="reference" />
+        
+        <!-- color of the shadow for text -->
+        <attr name="colorTextOnShadow" format="reference" />
+        <attr name="colorTextOffShadow" format="reference" />
+        
+        <!-- shadow of text -->
+        <attr name="shadowVerticalText" format="float" />
+        <attr name="shadowHorizontalText" format="float" />
+        
+    </declare-styleable>
+    
+</resources>

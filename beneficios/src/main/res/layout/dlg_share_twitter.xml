@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <WebView
+        android:id="@+id/wvLogin"
+        android:layout_width="@dimen/dlg_detail_share_width"
+        android:layout_height="@dimen/dlg_detail_share_height"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="@dimen/dlg_detail_share_width"
+        android:layout_height="@dimen/dlg_detail_share_height"
+        android:background="@color/dlg_twitter_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginVerySmall"
+            android:layout_marginLeft="@dimen/dlg_detail_share_twitter_btns_margin_left"
+            android:layout_marginRight="@dimen/dlg_detail_share_twitter_btns_margin_right"
+            android:layout_marginTop="@dimen/marginVerySmall" >
+
+            <Button
+                android:id="@+id/btnShare"
+                style="@style/dlgDetailShareTwitterBtnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dlg_share_btn_twitter_share"
+                android:text="@string/TWITTER_SEND" />
+
+            <TextView
+                android:id="@+id/tvCharsCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marginSmall"
+                android:layout_toLeftOf="@id/btnShare"
+                tools:ignore="SelectableText" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/dlgDetailShareTwitterBtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dlg_share_btn_twitter_cancel"
+                android:text="@string/TWITTER_CANCEL" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginSmall"
+            android:background="@color/white"
+            android:padding="@dimen/marginSmall" >
+
+            <ImageView
+                android:id="@+id/ivDiscount"
+                android:layout_width="@dimen/dlg_detail_share_img_width"
+                android:layout_height="@dimen/dlg_detail_share_img_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:src="@drawable/dsc_detail_img" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                style="@style/dlgDetailShareTwitterMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/marginSmall"
+                android:layout_toLeftOf="@id/ivDiscount"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvFixedText"
+                style="@style/dlgDetailShareTwitterFixedText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/etMessage"
+                android:layout_below="@id/etMessage"
+                android:text="@string/TWITTER_DEFAULT_TEXT" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

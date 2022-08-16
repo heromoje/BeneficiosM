@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDialogGen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- List -->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/genDialogListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/DSC_DETAIL_LOCATIONS_DIALOG_TITLE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@color/gray"
+        android:orientation="vertical" />
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btnsHeight"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/dlg_close_btn_separator"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/vActionCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="@dimen/marginVeryVerySmall"
+            android:background="@drawable/dlg_base_action_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/genDialogCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_CANCEL"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

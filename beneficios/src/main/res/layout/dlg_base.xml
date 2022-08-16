@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/llDialogGen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/genDlgBaseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        style="@style/genDlgBaseSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@drawable/gen_background"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginMediumBig"
+        android:contentDescription="@null"
+        android:src="@drawable/men_icon_user" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        style="@style/genDlgBaseMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btnsHeight"
+        android:layout_marginTop="@dimen/marginMediumBig"
+        android:background="@color/dlg_close_btn_separator"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/vActionCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginVeryVerySmall"
+            android:layout_marginTop="@dimen/marginVeryVerySmall"
+            android:layout_weight="1"
+            android:background="@drawable/dlg_base_action_bg"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/genDialogCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_CANCEL" />
+
+        </RelativeLayout>        
+
+        <RelativeLayout
+            android:id="@+id/vActionAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginVeryVerySmall"
+            android:layout_weight="1"
+            android:background="@drawable/dlg_base_action_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvOK"
+                style="@style/genDialogAcceptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_ACCEPT" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

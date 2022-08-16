@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gen_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <com.bcp.bo.discounts.views.CustomImageView
+            android:id="@+id/civInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ivCardTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/dsc_detail_ticket_used_top" />
+
+        <ImageView
+            android:id="@+id/ivCardBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivCardTop"
+            android:contentDescription="@null"
+            android:scaleType="matrix"
+            android:src="@drawable/dsc_detail_ticket_used_bottom" />
+
+        <ImageView
+            android:id="@+id/ivLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivCardTop"
+            android:layout_alignLeft="@id/ivCardTop"
+            android:layout_alignRight="@id/ivCardTop"
+            android:layout_alignTop="@id/ivCardTop"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/dlg_loading_rotation"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rlInfoUsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivCardBottom"
+            android:layout_alignLeft="@id/ivCardBottom"
+            android:layout_alignRight="@id/ivCardBottom"
+            android:layout_alignTop="@id/ivCardBottom"
+            android:padding="@dimen/marginMedium" >
+
+            <RelativeLayout
+                android:id="@+id/rlInfoUsedTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/tvPercentDiscount"
+                    style="@style/dscDetailUsedItemPercentDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/dsc_detail_discount_box_bg"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    style="@style/dscDetailItemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tvPercentDiscount"
+                    android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+                <ImageButton
+                    android:id="@+id/imageButton_Twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="@dimen/marginSmall"
+                    android:background="@drawable/dsc_detail_icon_twitter"
+                    android:contentDescription="@null"
+                    android:visibility="gone"/>
+                <ImageButton
+                    android:id="@+id/imageButton_Facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="@dimen/marginSmall"
+                    android:background="@drawable/dsc_detail_icon_facebook"
+                    android:contentDescription="@null"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvRestrictionMessage"
+                style="@style/dscDetailUsedItemInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/ivIconUsed"
+                android:layout_marginRight="@dimen/marginSmall"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text="@string/DSC_DETAIL_DISCOUNT_USED" />
+            <ImageView
+                android:id="@+id/ivIconUsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/marginVerySmall"
+                android:layout_marginRight="@dimen/marginVerySmall"
+                android:contentDescription="@null"
+                android:src="@drawable/dsc_list_check" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

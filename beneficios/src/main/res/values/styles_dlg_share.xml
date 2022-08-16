@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- FONTS
+    	Formata-Regular: 		formataRegular
+    	Formata-Italic:			formataItalic
+    	Formata-Medium:			formataMedium
+    	Formata-Medium-Italic:	formataMediumItalic
+    
+     -->
+    
+    <!-- TWITTER -->
+ 
+    <style name="dlgDetailShareTwitterBtnCancel"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">#4F4F4F</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="dlgDetailShareTwitterBtnShare"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">#FFFFFF</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="dlgDetailShareTwitterMessage"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">#898989</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+        
+    <style name="dlgDetailShareTwitterFixedText"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">#898989</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+       
+     <!-- FACEBOOK -->
+    <style name="dlgDetailShareFacebookBtnCancel"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">#4F4F4F</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="dlgDetailShareFacebookBtnShare"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">#FFFFFF</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="dlgDetailShareFacebookMessage"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">#898989</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+        
+    <style name="dlgDetailShareFacebookFixedText"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">#898989</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+</resources>

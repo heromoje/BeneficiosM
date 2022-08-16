@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gen_background">
+
+    <!-- Discounts -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:paddingTop="0dp"
+            android:clipToPadding="true"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!-- Here is the view to show if the list is emtpy -->
+
+    <TextView
+        android:id="@+id/empty"
+        style="@style/genNoResultsOnListMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="@dimen/marginBig"
+        android:layout_marginRight="@dimen/marginBig"
+        android:layout_marginTop="@dimen/marginVeryVeryBig"
+        android:drawablePadding="@dimen/marginBig"
+        android:drawableTop="@drawable/dsc_list_icon_not_results"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginMedium"
+        android:paddingRight="@dimen/marginMedium"
+        android:paddingTop="@dimen/marginVeryVeryBig"
+        android:text="@string/NO_RESULTS"
+        android:visibility="gone" />
+
+</RelativeLayout> 

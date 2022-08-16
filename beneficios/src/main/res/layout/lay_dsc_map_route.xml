@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" > 
+
+	<!--  MAP -->
+       <fragment
+           android:id="@+id/smfMapRoute"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           class="com.google.android.gms.maps.SupportMapFragment" />
+    
+   	<!--  
+   		Solves map bug with sliding menu: 
+   			https://github.com/jfeinstein10/SlidingMenu/issues/168
+   			http://stackoverflow.com/questions/14419521/moving-mapfragment-surfaceview-causes-black-background-flickering
+   	 -->
+
+       <RelativeLayout
+           android:id="@+id/rlLoading"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+
+           <ImageView
+               android:id="@+id/ivLoading"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:contentDescription="@null"
+               android:src="@drawable/dlg_loading_rotation" />
+
+           <TextView
+               android:id="@+id/textView1"
+               style="@style/genDialogLoadingMessage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/ivLoading"
+               android:layout_centerHorizontal="true"
+               android:text="@string/LOADING_ROUTE" />
+
+       </RelativeLayout>
+    
+</RelativeLayout> 

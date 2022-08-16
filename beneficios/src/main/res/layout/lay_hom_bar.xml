@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/provisional"
+        android:layout_width="match_parent" 
+        android:layout_height="@dimen/hom_bmenu_side" 
+        android:background="@drawable/gen_screenbar_bg" >
+
+    <ImageButton
+        android:id="@+id/bLeftMenu"
+        android:layout_width="@dimen/hom_bmenu_side"
+        android:layout_height="@dimen/hom_bmenu_side"
+        android:background="@drawable/hom_bleftmenu_bg"
+        android:contentDescription="@null"
+        android:src="@drawable/hom_bmenu_ico_left" />
+
+    <TextView
+        android:id="@+id/tvLeftTitle"
+        style="@style/genScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_toRightOf="@id/bLeftMenu"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/DSC_SHOW_OFFERS_FROM"
+        android:visibility="visible" />
+ 
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/genScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/marginBig"
+        android:layout_toRightOf="@id/bLeftMenu"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@null" />
+ 
+</RelativeLayout> 

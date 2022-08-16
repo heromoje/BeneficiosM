@@ -1,0 +1,188 @@
+<!--
+ name: STRING
+ url: STRING
+ inParserType: "PARSER_JSON", "*PARSER_XML", "PARSER_NONE"
+ outParserType: "PARSER_JSON", "*PARSER_XML", "PARSER_NONE", "PARSER_MULTIPART"
+ priority: INTEGER (*0 most priority)
+ returnInfoClass: STRING (class)
+ respondInMainThread: *"YES", "NO"
+ timeout: float (in seconds)
+ cacheSave: "CACHE_SAVE", *"CACHE_NO_SAVE"
+ cacheLoad: "CACHE_LOAD_CHECK", *"CACHE_LOAD_NO_CHECK", "CACHE_LOAD_ONLY"
+ cacheLoadTimeAgo: INTEGER (in seconds, 0  no check time)
+ methodRest: "*METHOD_REST_GET", "METHOD_REST_POST", "METHOD_REST_PUT", "METHOD_REST_DELETE",
+ 7.107.101.53 -> ETHERNET
+ 10.108.136.215 -> WIFI
+ 172.29.117.36:9520 -> BCP
+ 172.29.101.15:9097 -> Entorno certificación BCP
+ />
+-->
+<services>
+
+    <!--
+     <service
+     name=""
+     url=""
+     inParserType=""
+     outParserType=""
+     priority=""
+     timeout=""
+     returnInfoClass=""
+     respondInMainThread=""
+     cacheSave=""
+     cacheLoad=""
+     cacheLoadTimeAgo=""
+     methodRest=""
+     />
+    -->
+
+
+    <!-- BCP Discounts Services -->
+
+
+    <!-- SessionRestService -->
+    <service
+        name="authentication"
+        inParserType=""
+        methodRest="METHOD_REST_POST"
+        priority="0"
+        timeout="10"
+        returnInfoConverter="AccessResponse"
+        url="{@url}/authentication" />
+    
+    <service
+        name="loginSession"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_POST"
+        outParserType="PARSER_JSON"
+        priority="0"
+        timeout="10"
+        returnInfoConverter="SessionResponse"
+        sendConverter="SessionRest"
+        url="{@url}/sessionService/session" />
+    
+    <service
+        name="logoutSession"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_DELETE"
+        priority="0"
+        timeout="10"
+        returnInfoConverter="RestResponse"
+        url="{@url}/sessionService/session/{@appId}/{@userId}/{@deviceId}" />
+    
+    <service
+        name="devicePermissions"
+        inParserType="PARSER_JSON"
+        outParserType="PARSER_JSON"
+        methodRest="METHOD_REST_POST"
+        priority="0"
+        timeout="30"
+        sendConverter="SessionRest"
+        returnInfoConverter="RestResponse"
+        url="{@url}/deviceService/permissions/{@appId}" />
+    
+    
+    <service
+        name="imagesSession"
+        inParserType="PARSER_MULTIPART"
+        methodRest="METHOD_REST_POST"
+        outParserType="PARSER_JSON"
+        priority="-3"
+        timeout="30"
+        returnInfoConverter="ImageResponse"
+        sendConverter="PackageImageRest"
+        url="{@url}/sessionService/session/images" />
+
+    <!-- UserRestService -->
+    <service
+        name="loginUser"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="UserResponse"
+        url="{@url}/userService/user/{@appId}/{@dni}" />
+    
+    <service
+        name="logoutUser"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_DELETE"
+        priority="0"
+        timeout="10"
+        returnInfoConverter="RestResponse"
+        url="{@url}/userService/user/{@appId}/{@userId}" />
+
+    <!-- SectionRestService -->
+    <service
+        name="sections"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="10"
+        returnInfoConverter="SectionResponse"
+        url="{@url}/sectionService/sections/{@appId}/{@userId}/{@dateUpdate}/{@resolutionId}" />
+
+    <!-- DiscountRestService -->
+    <service
+        name="discountsCategory"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="DiscountResponse"
+        url="{@url}/discountService/discount/{@appId}/{@userId}/{@categoryId}/{@dateUpdate}" />
+    
+    <service
+        name="discountsListImages"
+        inParserType="PARSER_MULTIPART"
+        methodRest="METHOD_REST_POST"
+        outParserType="PARSER_JSON"
+        priority="-2"
+        timeout="20"
+        respondInMainThread="false"
+        returnInfoConverter="ImageResponse"
+        sendConverter="PackageImageRest"
+        url="{@url}/discountService/discount/images" />
+    
+    <service
+        name="discountsDetailImages"
+        inParserType="PARSER_MULTIPART"
+        methodRest="METHOD_REST_POST"
+        outParserType="PARSER_JSON"
+        priority="-1"
+        timeout="30"
+        respondInMainThread="false"
+        returnInfoConverter="ImageResponse"
+        sendConverter="PackageImageRest"
+        url="{@url}/discountService/discount/images" />
+        
+    <service
+        name="discountsLocation"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="RestResponse"
+        url="{@url}/discountService/discount/location/{@appId}/{@userId}/{@categoryId}/{@discountId}" />
+    
+    <service
+        name="resolveAddress"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="GGeocodeResponse"
+        url="http://maps.googleapis.com/maps/api/geocode/json" />
+    
+    <service
+        name="resolveRoute"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="GRouteResponse"
+        url="http://maps.googleapis.com/maps/api/directions/json" />
+    
+    
+
+</services>

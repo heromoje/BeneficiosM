@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/rlCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/marginMedium"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/ivCardTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/login_card_bg_top" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ivCardTop"
+            android:layout_alignRight="@id/ivCardTop"
+            android:layout_below="@+id/ivCardTop" >
+
+            <LinearLayout
+                android:id="@+id/llCardBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/marginMedium"
+                android:paddingRight="@dimen/marginMedium" >
+
+                <LinearLayout
+                    android:id="@+id/llTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:layout_marginTop="@dimen/marginSmall"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvYours"
+                        style="@style/loginTitleYours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/LGN_YOUR" />
+
+                    <TextView
+                        android:id="@+id/tvBenefits"
+                        style="@style/loginTitleBenefits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/LGN_BENEFITS" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightGenET"
+                    android:layout_marginBottom="@dimen/marginMedium"
+                    android:background="@drawable/lgn_box_dni" >
+
+                    <Button
+                        android:id="@+id/button_DeletePhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/marginSmall"
+                        android:background="@drawable/lgn_etcic_icon_del" />
+
+                    <EditText
+                        android:id="@+id/editText_Phone"
+                        style="@style/loginTextCic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/marginSmall"
+                        android:layout_toLeftOf="@id/button_DeletePhone"
+                        android:background="@null"
+                        android:hint="@string/CON_TXT_PHONE"
+                        android:imeActionId="@+id/editText_Email"
+                        android:imeOptions="actionNext"
+                        android:maxLength="@integer/login_input_max_length"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/marginMedium"
+                        android:singleLine="true"
+                        android:text="06174665"
+                        android:inputType="number"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightGenET"
+                    android:layout_marginBottom="@dimen/marginMedium"
+                    android:background="@drawable/lgn_box_dni" >
+
+                    <Button
+                        android:id="@+id/button_DeleteEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/marginSmall"
+                        android:background="@drawable/lgn_etcic_icon_del" />
+
+                    <EditText
+                        android:id="@+id/editText_Email"
+                        style="@style/loginTextCic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/marginSmall"
+                        android:layout_toLeftOf="@id/button_DeleteEmail"
+                        android:background="@null"
+                        android:hint="@string/CON_TXT_EMAIL"
+                        android:imeActionId="@+id/button_Accept"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/marginMedium"
+                        android:singleLine="true"
+                        android:text="holamundo@gmail.com"
+                        android:inputType="textWebEmailAddress"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_Accept"
+                style="@style/loginButtonEnter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_marginLeft="@dimen/marginSmall"
+                android:layout_marginRight="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmallMedium"
+                android:background="@drawable/lgn_btn_accept"
+                android:text="@string/BTN_ACCEPT_CONDITION" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

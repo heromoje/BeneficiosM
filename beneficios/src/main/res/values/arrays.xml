@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="extensiones">
+	    <item>LP,La Paz,Q</item>
+	    <item>CB,Cochabamba,Q</item>
+	    <item>SC,Santa Cruz,Q</item>
+	    <item>OR,Oruro,Q</item>
+	    <item>PO,Potosí,Q</item>
+	    <item>TJ,Tarija,Q</item>
+	    <item>BE,Beni,Q</item>
+	    <item>PA,Pando,Q</item>
+	    <item>CH,Chuquisaca,Q</item>
+	    <item>PE,Extranjero,P</item>
+	</string-array>
+	<string-array name="ciudades">
+		<item>La Paz,LP</item>
+		<item>Cochabamba,CB</item>
+		<item>Santa Cruz,SC</item>
+	</string-array>
+</resources>

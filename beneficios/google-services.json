@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "786332549758",
+    "project_id": "beneficiosbcp-5a9cb",
+    "storage_bucket": "beneficiosbcp-5a9cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786332549758:android:ef6efa948c7071f0ff4e2f",
+        "android_client_info": {
+          "package_name": "com.bcp.bo.discounts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786332549758-7k4dledr3q9mcp7iedeoucmlauukoknf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAioOJZO9uvkC3Jt3_3q0jisJ-gTWQBNoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786332549758-7k4dledr3q9mcp7iedeoucmlauukoknf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

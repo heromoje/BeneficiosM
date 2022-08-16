@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- MAP -->
+
+    <fragment
+        android:id="@+id/smfMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!--
+   		Solves map bug with sliding menu: 
+   			https://github.com/jfeinstein10/SlidingMenu/issues/168
+   			http://stackoverflow.com/questions/14419521/moving-mapfragment-surfaceview-causes-black-background-flickering
+    -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/llSearchAndLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginRight="@dimen/marginSmall"
+        android:layout_marginTop="@dimen/marginSmall" >
+
+        <EditText
+            android:id="@+id/etSearch"
+            style="@style/searchBox"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dsc_map_searchbar"
+            android:drawableLeft="@drawable/dsc_map_icon_search"
+            android:drawablePadding="@dimen/marginSmall"
+            android:ems="10"
+            android:hint="@string/DSC_MAP_SEARCH_BOX"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/marginFontMedium"
+            android:singleLine="true"
+            android:visibility="gone">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ibLocation"
+            android:layout_width="@dimen/map_icon_location_widht"
+            android:layout_height="@dimen/map_icon_location_height"
+            android:background="@drawable/dsc_map_box_geolocation"
+            android:padding="@dimen/marginSmall"
+            android:src="@drawable/dsc_map_icon_geo"
+            android:contentDescription="@null"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

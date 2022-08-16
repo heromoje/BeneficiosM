@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#002D74</color>
+	<color name="colorPrimaryDark">#002D74</color>
+	<color name="colorAccent">#002D74</color>
+
+    <!-- BCP COLORS -->
+    <color name="orange_bcp">#FF4E00</color>
+    <color name="blue_bcp">#002D74</color>
+    
+    <!-- GENERIC COLORS -->
+	<color name="transparent">#00000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#777777</color>
+	<color name="red">#FF0000</color>
+	<color name="orange">#ff4e00</color> <!-- FF6600 -->
+	<color name="marine">#002d74</color> <!-- 000066 -->
+	<color name="white_alpha80">#DDFFFFFF</color>
+	<color name="white_alpha100">#00FFFFFF</color>
+	
+	<!-- GLOBAL COLORS  -->
+	
+	<!-- LOGIN -->
+	<color name="lgn_errorColor">#D80000</color>
+	<color name="lgn_textColor">#000000</color>
+	<color name="lgn_hintColor">#A1A1A1</color>
+	<color name="orange_shadow">#803300</color>
+	
+	<!-- LEFT MENU -->
+	<color name="men_head_textColor">#000000</color>
+	<color name="men_subhead_textColor">#000000</color>
+	<color name="men_cat_normal_textColor">#AAFFFFFF</color>
+	<color name="men_cat_pressed_textColor">#FFFFFF</color>
+	<color name="men_sec_textColor">#002d74</color>
+	<color name="men_bgColor">#002d74</color>
+	<color name="men_separatorColor">#66FFFFFF</color>    
+	<color name="men_sec_subItem_textColor">#9C9C9C</color> 
+		
+	<!-- SWITCH CUSTOM COLORS -->
+	<color name="switchColorTextOn">#FFFFFF</color>
+	<color name="switchColorTextOff">#000000</color>
+	<color name="switchColorShadowTextOn">#FFFFFF</color>
+	<color name="switchColorShadowTextOff">#F78E52</color>
+	
+	<!-- DIALOG LOADING -->
+	<color name="dlg_loading_msg_texColor">#FFFFFF</color> 
+	
+	<!-- DIALOG CHECK -->
+	<color name="dlg_check_memo_normal_texColor">#A7A7A7</color> 
+	<color name="dlg_check_memo_checked_texColor">#FF6600</color> 
+	
+	<!-- DIALOG CLOSE -->
+	<color name="dlg_close_head_texColor">#191918</color> 
+	<color name="dlg_close_btn_separator">#A1A1A1</color>
+	<color name="dlg_close_btn_texColor">#787878</color>
+	
+	<!-- DIALOG LIST -->
+	<color name="dlg_list_subitem_textColor">#B1A7A7</color> 
+	<color name="dlg_list_subitem_textColor_pressed">#FFFFFF</color>
+	<color name="dlg_list_btn_cancel_textColor">#787878</color>
+	
+	<!-- DIALOG ERROR, WARNING -->
+	<color name="dlg_error_warning_title_textColor">#191918</color> 
+	<color name="dlg_error_warning_message_textColor">#B1A7A7</color>
+	<color name="dlg_error_warning_btn_acept_textColor">#787878</color>
+	
+	<!-- FACEBOOK DIALOG -->
+	<color name="dlg_facebook_bg">#4F6BA6</color>
+
+	<!-- TWITTER DIALOG -->
+	<color name="dlg_twitter_bg">#EEEEEE</color>
+	
+	<!-- MAP SEARCH HINT COLOR -->
+	<color name="dsc_map_search_hintTextColor">#BDBDBD</color>
+	
+	<!-- DISCOUNTS -->
+	<color name="dsc_list_description_used_bg">#363636</color>
+	
+</resources>

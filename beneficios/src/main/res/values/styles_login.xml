@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- FONTS
+    	Formata-Regular: 		formataRegular
+    	Formata-Italic:			formataItalic
+    	Formata-Medium:			formataMedium
+    	Formata-Medium-Italic:	formataMediumItalic
+    
+     -->
+    
+    <!-- LOGIN -->
+    
+    <style name="loginTitleYours"> 
+        <item name="android:textSize">@dimen/font_size_60</item>
+        <item name="android:textColor">@color/marine</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/marginFontSmall</item>
+    </style>
+    
+    <style name="loginTitleBenefits"> 
+        <item name="android:textSize">@dimen/font_size_60</item>
+        <item name="android:textColor">@color/orange</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+    
+    <style name="loginTextCic"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">@color/lgn_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="loginHintCic"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">@color/lgn_hintColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="loginTextCicError"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">@color/lgn_errorColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="loginTextRememberCicOff"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">@color/lgn_hintColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="loginTextRememberCicOn"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">@color/orange</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="loginButtonEnter"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">@color/white</item> 
+        <item name="android:textStyle">bold</item>
+        <item name="android:tag">formataRegular</item>
+        <item name="android:shadowColor">@color/orange_shadow</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+  
+</resources>

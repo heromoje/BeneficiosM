@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When it is disabled -->
+    <item android:drawable="@drawable/lgn_btn_accept_pressed" android:state_enabled="false" />
+    <!-- When pressed -->
+	<item android:drawable="@drawable/lgn_btn_accept_pressed" android:state_pressed="true" /> 
+	<!-- When it is normal -->
+	<item android:drawable="@drawable/lgn_btn_accept_normal" />
+</selector>

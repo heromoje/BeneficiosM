@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- COMPULSORY. margin, fullscreen, none -->
+    <item name="default_slidingmenu_touchMode" type="string">margin</item>
+    
+    <!-- COMPULSORY. Fade from 0 to 1 (wrapps a float value). 0 for not enabled -->
+    <item name="default_slidingmenu_fadeDegree" type="string">0.99</item>
+     
+    <!-- COMPULSORY if shadowWidth is enabled -->
+    <drawable name="default_slidingmenu_leftShadow">@drawable/hom_menu_left_shadow</drawable>    
+    <drawable name="default_slidingmenu_rightShadow">@drawable/hom_menu_right_shadow</drawable>
+    
+    <!-- COMPULSORY. Shadow width. 0 for not enabled -->
+    <dimen name="default_slidingmenu_shadowWidth">2dp</dimen>
+    
+    <!-- COMPULSORY. -->
+    <dimen name="default_slidingmenu_offset">48dp</dimen>
+    
+</resources>

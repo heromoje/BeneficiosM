@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:/Development/KEYS/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "com.bcp.bo.discounts"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 16
+        versionName "1.9.2"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            proguardFiles getDefaultProguardFile(
+                    'proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+}
+
+dependencies {
+    implementation 'com.facebook.android:facebook-android-sdk:4.20.0'
+    //Migrar a una Versión superior de los mapas hará que se utilizen librerias de soporte mayores a
+    //26, lo cual hará que existan conflictos con un atributo definido layout_anchorGravity
+    //Se necesita una migración a AndroidX resolviendo todas las dependencias
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.android.support:recyclerview-v7:23.4.0'
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support:support-v4:23.4.0'
+    implementation 'com.android.support:design:23.4.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+    implementation files('libs/twitter4j-core-3.0.5.jar')
+    implementation project(':service')
+}
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin

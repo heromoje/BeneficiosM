@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/llDialogGen"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginMedium"
+        android:paddingLeft="@dimen/marginMedium"
+        android:paddingStart="@dimen/marginMedium"
+        android:paddingRight="@dimen/marginMedium"
+        android:paddingEnd="@dimen/marginSmall"
+        android:paddingTop="@dimen/marginMedium" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:layout_marginEnd="@dimen/marginSmall"
+            android:contentDescription="@null"
+            android:src="@drawable/dlg_icon_warning" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/genDialogErrorWarningTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/RAT_TITLE"/>
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@drawable/gen_background"
+         />
+    <LinearLayout
+        android:id="@+id/llCardBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/marginMedium"
+        android:paddingRight="@dimen/marginMedium" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightGenET"
+            android:layout_marginTop="@dimen/marginSmall"
+            android:layout_marginBottom="@dimen/marginSmall">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:isIndicator="true"
+                style="@style/RatingBarStar"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dlg_close_btn_separator" >
+
+        <LinearLayout
+            android:id="@+id/llButtons2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dlg_close_btn_separator"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/textView_Send"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_SEND" />
+
+            <TextView
+                android:id="@+id/textView_Cancelar"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_CANCEL" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

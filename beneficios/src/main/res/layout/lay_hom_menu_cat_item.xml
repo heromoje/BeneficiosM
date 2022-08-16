@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Category -->
+
+    <LinearLayout
+        android:id="@+id/llCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/men_category_height"
+        android:background="@drawable/men_left_items_bg"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/imageView_CategoryIcon"
+            android:layout_width="@dimen/men_category_icon_width"
+            android:layout_height="@dimen/men_category_icon_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:contentDescription="@null" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView_Counter"
+                style="@style/menCounterItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marginMedium"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textView_Name"
+                style="@style/menCategoryListItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marginVerySmall"
+                android:layout_toLeftOf="@id/textView_Counter"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/llDialogGen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/genDialogCheckTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Tus descuentos Cuenta Sueldo:"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@drawable/gen_background"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginMedium"
+        android:contentDescription="@null"
+        android:src="@drawable/gen_icon_alert_special_offers" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        style="@style/genDialogCheckMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginMedium"
+        android:layout_marginLeft="@dimen/marginMedium"
+        android:layout_marginRight="@dimen/marginMedium"
+        android:text="@string/SPECIAL_DISCOUNTS_ALERT_MESSAGE" />
+
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/cbMemo"
+            style="@style/genDialogCheckMemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginMedium"
+            android:layout_marginRight="@dimen/marginMedium"
+            android:button="@drawable/gen_checkbox"
+            android:text="@string/NO_SHOW_MORE" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btnsHeight"
+        android:layout_marginTop="@dimen/marginMediumBig"
+        android:background="@color/dlg_close_btn_separator"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/vCheckActionAccept"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginVeryVerySmall"
+            android:layout_weight="1"
+            android:background="@drawable/dlg_base_action_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tvCheckDlgOk"
+                style="@style/genDialogAcceptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_ACCEPT" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

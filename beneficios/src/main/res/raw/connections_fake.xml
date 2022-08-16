@@ -1,0 +1,192 @@
+<!--
+ name: STRING
+ url: STRING
+ inParserType: "PARSER_JSON", "*PARSER_XML", "PARSER_NONE"
+ outParserType: "PARSER_JSON", "*PARSER_XML", "PARSER_NONE", "PARSER_MULTIPART"
+ priority: INTEGER (*0 most priority)
+ returnInfoClass: STRING (class)
+ respondInMainThread: *"YES", "NO"
+ cacheSave: "CACHE_SAVE", *"CACHE_NO_SAVE"
+ cacheLoad: "CACHE_LOAD_CHECK", *"CACHE_LOAD_NO_CHECK", "CACHE_LOAD_ONLY"
+ cacheLoadTimeAgo: INTEGER (in seconds, 0  no check time)
+ methodRest: "*METHOD_REST_GET", "METHOD_REST_POST", "METHOD_REST_PUT", "METHOD_REST_DELETE",
+ 7.107.101.53 -> ETHERNET
+ 10.108.136.215 -> WIFI
+ 172.29.117.36:9520 -> BCP
+ 172.29.101.15:9097 -> Entorno certificación BCP
+ />
+ -->
+<services>
+    <!--
+     <service
+     name=""
+     url=""
+     inParserType=""
+     outParserType=""
+     priority=""
+     returnInfoClass=""
+     respondInMainThread=""
+     cacheSave=""
+     cacheLoad=""
+     cacheLoadTimeAgo=""
+     methodRest=""
+     />
+     -->
+    
+    
+    <!-- BCP Discounts Services -->
+    
+    <!-- SessionRestService -->
+    <service
+        name="deviceAccess"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        	timeout="10"
+        returnInfoConverter="AccessResponse"
+        url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/AccessResponse.php" />
+    
+    <service
+    name="loginSession"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/SessionResponse.php"
+    inParserType="PARSER_JSON"
+    outParserType="PARSER_JSON"
+    priority="0"
+        timeout="10"
+    sendConverter="SessionRest"
+    returnInfoConverter="SessionResponse"
+    methodRest="METHOD_REST_POST"
+    />
+    
+    <service
+    name="logoutSession"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/RestResponse.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="10"
+    returnInfoConverter="RestResponse"
+    methodRest="METHOD_REST_DELETE"
+    />
+    
+    <service
+        name="devicePermissions"
+        inParserType="PARSER_JSON"
+        outParserType="PARSER_JSON"
+        methodRest="METHOD_REST_POST"
+        priority="0"
+        sendConverter="SessionRest"
+        returnInfoConverter="RestResponse"
+        url="{@url}/RestResponse.php" />
+    
+    <service
+    name="imagesSession"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/RestResponse.php"
+    inParserType="PARSER_MULTIPART"
+    outParserType="PARSER_JSON"
+    priority="-3"
+        timeout="30"
+    sendConverter="PackageImageRest"
+    returnInfoConverter="ImageResponse"
+    methodRest="METHOD_REST_POST"
+    />
+    
+    
+    <!-- UserRestService -->
+    <service
+    name="loginUser"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/UserResponse.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="30"
+    returnInfoConverter="UserResponse"
+    methodRest="METHOD_REST_GET"
+    />
+    
+    <service
+    name="logoutUser"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/RestResponse.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="10"
+    returnInfoConverter="RestResponse"
+    methodRest="METHOD_REST_DELETE"
+    />
+    
+    
+    <!-- SectionRestService -->
+    <service
+    name="sections"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/SectionResponse.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="10"
+    returnInfoConverter="SectionResponse"
+    methodRest="METHOD_REST_GET"
+    />
+    
+    <!-- DiscountRestService -->
+    <service
+    name="discountsCategory"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/DiscountResponse4.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="30"
+    returnInfoConverter="DiscountResponse"
+    methodRest="METHOD_REST_GET"
+    />
+    
+    <service
+    name="discountsListImages"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/ImageResponse.html"
+    inParserType="PARSER_MULTIPART"
+    outParserType="PARSER_JSON"
+    priority="-2"
+        timeout="20"
+    sendConverter="DefinitionImageRest"
+    returnInfoConverter="ImageResponse"
+    methodRest="METHOD_REST_POST"
+    />
+    
+    <service
+    name="discountsDetailImages"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/ImageResponse.html"
+    inParserType="PARSER_MULTIPART"
+    outParserType="PARSER_JSON"
+    priority="-1"
+        timeout="30"
+    sendConverter="DefinitionImageRest"
+    returnInfoConverter="ImageResponse"
+    methodRest="METHOD_REST_POST"
+    />
+        
+    <service
+    name="discountsLocation"
+    url="http://ovh1.ameu8.com/bcp/services/fase11/fakeDiscounts/RestResponse.php"
+    inParserType="PARSER_JSON"
+    priority="0"
+        timeout="30"
+    returnInfoConverter="RestResponse"
+    methodRest="METHOD_REST_GET"
+    />
+    
+    <service
+        name="resolveAddress"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="GGeocodeResponse"
+        url="http://maps.googleapis.com/maps/api/geocode/json" />
+    
+    <service
+        name="resolveRoute"
+        inParserType="PARSER_JSON"
+        methodRest="METHOD_REST_GET"
+        priority="0"
+        timeout="30"
+        returnInfoConverter="GRouteResponse"
+        url="http://maps.googleapis.com/maps/api/directions/json" />
+    
+    
+    
+</services>

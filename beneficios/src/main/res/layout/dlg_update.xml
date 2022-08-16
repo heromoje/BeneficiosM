@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/llDialogGen"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginMedium"
+        android:paddingLeft="@dimen/marginSmall"
+        android:paddingRight="@dimen/marginSmall"
+        android:paddingTop="@dimen/marginMedium" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/genDialogErrorWarningTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginVeryVerySmall"
+        android:background="@drawable/gen_background"
+         />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        style="@style/genDialogErrorWarningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/marginMedium" />
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dlg_close_btn_separator" >
+
+        <TextView
+            android:id="@+id/tvOk"
+            style="@style/genDialogErrorWarningBtnAcept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnsHeight"
+            android:layout_margin="@dimen/marginVeryVerySmall"
+            android:background="@drawable/dlg_base_action_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/BTN_ACCEPT" />
+
+         <LinearLayout
+            android:id="@+id/llButtons2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/dlg_close_btn_separator"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvOk2"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_ACCEPT" />
+
+            <TextView
+                android:id="@+id/tvCancel2"
+                style="@style/genDialogErrorWarningBtnAcept"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnsHeight"
+                android:layout_margin="@dimen/marginVeryVerySmall"
+                android:layout_weight="1"
+                android:background="@drawable/dlg_base_action_bg"
+                android:gravity="center"
+                android:padding="@dimen/marginSmall"
+                android:singleLine="true"
+                android:text="@string/BTN_CANCEL" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

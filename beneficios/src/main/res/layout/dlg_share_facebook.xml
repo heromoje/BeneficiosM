@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llContent"
+        android:layout_width="@dimen/dlg_detail_share_width"
+        android:layout_height="@dimen/dlg_detail_share_height"
+        android:background="@color/dlg_facebook_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btnShare"
+                style="@style/dlgDetailShareFacebookBtnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dlg_share_btn_facebook_share"
+                android:text="@string/FB_PUBLIC_BUTTON" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/dlgDetailShareFacebookBtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dlg_share_btn_facebook_cancel"
+                android:text="@string/FB_CANCEL_BUTTON" />
+
+        </RelativeLayout>
+        
+<!-- 
+        <com.facebook.widget.ProfilePictureView
+            android:id="@+id/profilePicture"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:gravity="center_horizontal"
+            facebook:preset_size="normal" >
+
+        </com.facebook.widget.ProfilePictureView>
+ -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginSmall"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:background="@color/white"
+            android:padding="@dimen/marginSmall" >
+
+            <ImageView
+                android:id="@+id/ivDiscount"
+                android:layout_width="@dimen/dlg_detail_share_img_width"
+                android:layout_height="@dimen/dlg_detail_share_img_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:src="@drawable/dsc_detail_img" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                style="@style/dlgDetailShareFacebookMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/marginSmall"
+                android:layout_toLeftOf="@id/ivDiscount"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvFixedText"
+                style="@style/dlgDetailShareFacebookFixedText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/etMessage"
+                android:layout_below="@id/etMessage"
+                android:text="@string/FB_DEFAULT_TEXT" />
+
+        </RelativeLayout>
+
+    </LinearLayout>

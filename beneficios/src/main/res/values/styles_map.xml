@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- FONTS
+    	Formata-Regular: 		formataRegular
+    	Formata-Italic:			formataItalic
+    	Formata-Medium:			formataMedium
+    	Formata-Medium-Italic:	formataMediumItalic
+    
+     -->
+    
+    <!-- MAP -->
+ 
+    <style name="searchBox"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">@color/gray</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColorHint">@color/dsc_map_search_hintTextColor</item>
+    </style>
+
+    <!-- MAP INFO WINDOW -->
+        
+    <style name="mapInfoWindowDistance"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">@color/marine</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+        <style name="mapInfoWindowUnits"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">@color/marine</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+        <style name="mapInfoWindowCompany"> 
+        <item name="android:textSize">@dimen/font_size_32</item>
+        <item name="android:textColor">@color/orange</item>   
+        <item name="android:tag">formataRegular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+        <style name="mapInfoWindowAddress"> 
+        <item name="android:textSize">@dimen/font_size_26</item> 
+        <item name="android:tag">formataRegular</item>
+    </style>  
+</resources>

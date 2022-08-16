@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gen_background">
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+		android:background="@drawable/dsc_detail_ticket_footer"
+		android:padding="@dimen/marginVerySmall">
+        <TextView
+	        android:id="@+id/tvIndex"
+	        style="@style/dscPagerIndex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:minEms="2"/>
+
+		<TextView
+		    android:id="@+id/tvPagination"
+		    style="@style/dscPagerIndex"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:text="@string/DSC_DETAIL_PAGINATION" />
+
+		<TextView
+		    android:id="@+id/tvSize"
+		    style="@style/dscPagerIndex"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:minEms="2"/>
+    </LinearLayout>
+</RelativeLayout>

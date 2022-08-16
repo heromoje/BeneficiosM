@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- FONTS
+    	Formata-Regular: 		formataRegular
+    	Formata-Italic:			formataItalic
+    	Formata-Medium:			formataMedium
+    	Formata-Medium-Italic:	formataMediumItalic
+    
+     -->
+    
+    <!-- GENERAL -->
+ 
+    <style name="genScreenTitle"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">#FFFFFF</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+   
+    <style name="genDlgBaseTitle"> 
+        <item name="android:textSize">@dimen/font_size_34</item>
+        <item name="android:textColor">@color/dlg_close_head_texColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDlgBaseSubTitle"> 
+        <item name="android:textSize">@dimen/font_size_30</item>
+        <item name="android:textColor">@color/dlg_close_head_texColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+        <style name="genDlgBaseMessage"> 
+        <item name="android:textSize">@dimen/font_size_30</item>
+        <item name="android:textColor">@color/marine</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genNoResultsOnListMessage">
+        <item name="android:textSize">@dimen/font_size_30</item>
+        <item name="android:textColor">#959595</item>
+        <item name="android:tag">formataRegular</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <!-- DIALOG CHECK -->
+     <style name="genDialogCheckMessage"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">#000066</item>
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+     <style name="genDialogCheckTitle"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">#191918</item>
+        <item name="android:tag">formataRegular</item>
+    </style>  
+      
+     <style name="genDialogCheckMemo"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">@drawable/dlg_check_memo_text_color</item>
+        <item name="android:tag">formataRegular</item>
+    </style>
+
+     <!-- DIALOG LOADING -->
+     <style name="genDialogLoadingMessage"> 
+        <item name="android:textSize">@dimen/font_size_26</item>
+        <item name="android:textColor">@color/dlg_loading_msg_texColor</item>
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <!-- DIALOG LIST -->
+     <style name="genDialogListTitle"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/dlg_close_head_texColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDialogListItemText"> 
+        <item name="android:textSize">@dimen/font_size_24</item>
+        <item name="android:textColor">@color/orange</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDialogListSubItemText"> 
+        <item name="android:textSize">@dimen/font_size_22</item>
+        <item name="android:textColor">@drawable/dlg_list_subitems_text_color</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDialogCancelBtn"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/dlg_list_btn_cancel_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+   <style name="genDialogAcceptBtn"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/dlg_list_btn_cancel_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+        <!-- DIALOG ERROR, WARNING -->
+     <style name="genDialogErrorWarningTitle"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/dlg_error_warning_title_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDialogErrorWarningText"> 
+        <item name="android:textSize">@dimen/font_size_28</item>
+        <item name="android:textColor">@color/dlg_error_warning_message_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+    <style name="genDialogErrorWarningBtnAcept"> 
+        <item name="android:textSize">@dimen/font_size_36</item>
+        <item name="android:textColor">@color/dlg_error_warning_btn_acept_textColor</item>   
+        <item name="android:tag">formataRegular</item>
+    </style>
+    
+</resources>
